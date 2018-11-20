@@ -10,12 +10,23 @@
 
     <title>Educatio</title>
 
+
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/heroic-features.css" rel="stylesheet">
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" >
+	</script>
+	<script type="text/javascript">
+ 	$(document).ready(function(){
+   		$("#next").click(function(){
+    		$("#tampung").load("page2.php");
+    		$("#page1").display = "none";
+   		});
+  	});
+	</script>
   </head>
 
   <body>
@@ -47,6 +58,23 @@
         </div>
       </div>
     </nav>
+    	<center>
+ 		<!-- <a href="#" id="klikdata" onclick="this.style.display = 'none'">Tampil Data</a><br/> -->
+ 		<div id="tampung">
+ 			<br>
+ 			<br>
+ 			<br>
+ 			<h1>Requirements Engineering</h1>
+			<p>
+			Requirements engineering adalah fase terdepan dari proses software engineering, dimana software requirements (kebutuhan) dari user (pengguna) dan customer (pelanggan) dikumpulkan, dipahami dan ditetapkan. Para pakar software engineering (rekayasa perangkat lunak) sepakat bahwa requirements engineering adalah suatu pekerjaan yang sangat penting, terutama berdasarkan fakta bahwa kebanyakan kegagalan pengembangan software disebabkan karena adaya ketidakkonsistenan (inconsistent), ketidaklengkapan (incomplete), maupun ketidakbenaran (incorrect) dari requirements specification (spesifikasi kebutuhan) [Romi-03]. The Standish Group mencatat bahwa prosentase akumulatif kegagalan sebuah project pengembangan software sebagian besar disebabkan oleh masalah requirements dan spesifikasinya [Standish-94].   
+
+			</p>
+    		<a href="#" id="previous" onclick="this.style.display = 'none'"><button>Previous</button></a>
+    		<a href="#" id="next" onclick="this.style.display = 'none'"><button>Next</button></a>
+ 		</div>
+ 		
+		</center>
+		</div>
 
 </body>
 </html>

@@ -53,12 +53,12 @@
 
       <!-- Jumbotron Header -->
       <header class="jumbotron my-4">
-        <h1 class="display-3">Hello Student!</h1>
+        <h1 class="display-3">Halo Student!</h1>
         <p class="lead">Halaman Terakhir Yang Dibaca :</p>
         <?php
             //return halaman terakhir yang dibaca user
         ?>
-        <a href="#" class="btn btn-primary btn-lg">Continue</a>
+        <a href="#" class="btn btn-primary btn-lg">Lanjutkan</a>
       </header>
 
       <!-- Page Features -->
@@ -69,10 +69,10 @@
             <img class="card-img-top" src="http://placehold.it/500x325" alt="">
             <div class="card-body">
               <h4 class="card-title">Requirement Engineering</h4>
-              <p class="card-text">Requirements engineering adalah fase terdepan dari proses rekayasa perangkat lunak (software engineering)</p>
+              <p class="card-text">Requirement engineering adalah fase terdepan dari proses rekayasa perangkat lunak (software engineering)</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a class="btn btn-primary" href="materi.php">Mulai</a>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
               <p class="card-text">Latihan Soal Requirement Engineering</p>
             </div>
             <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
+              <a class="btn btn-primary">Mulai</a>
             </div>
           </div>
         </div>
