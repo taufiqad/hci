@@ -1,3 +1,11 @@
+<?php
+  session_start(); 
+  include('function/connection.php');
+  if (empty($_SESSION['idlogin'])){
+  header("Location: index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,7 +49,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.php">Home
+              <a class="nav-link" href="home.php">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -52,7 +60,7 @@
               <a class="nav-link" href="#">Settings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="function/logout.php">Logout</a>
             </li>
           </ul>
         </div>

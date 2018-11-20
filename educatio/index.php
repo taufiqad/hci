@@ -1,139 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Educatio</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/heroic-features.css" rel="stylesheet">
-
-  </head>
-
-  <body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Educatio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.php">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="materi.php">Course</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Settings</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-      <!-- Jumbotron Header -->
-      <header class="jumbotron my-4">
-        <h1 class="display-3">Halo Student!</h1>
-        <p class="lead">Halaman Terakhir Yang Dibaca :</p>
-        <?php
-            //return halaman terakhir yang dibaca user
-        ?>
-        <a href="#" class="btn btn-primary btn-lg">Lanjutkan</a>
-      </header>
-
-      <!-- Page Features -->
-      <div class="row text-center">
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Requirement Engineering</h4>
-              <p class="card-text">Requirement engineering adalah fase terdepan dari proses rekayasa perangkat lunak (software engineering)</p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-primary" href="materi.php">Mulai</a>
+  
+</head>
+<body>
+  <div class="row" style="margin-top: 100px;">
+                  <div class="col-xl-4"></div>
+                  <div class="col-xl-4" style="background-color: lavender;">
+                <form method="post" action="function/checklogin.php">
+                  <h1>Educatio</h1>
+                  <h3>Login Page</h3>
+                  <div class="form-group">
+                    <label for="text">Username</label>
+                    <input type="text" class="form-control" name="uname" id="uname">
+                  </div>
+                  <div class="form-group">
+                    <label for="nama_mekanik">Password</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+                <small>Didn't Have An Account?</small>
+                <a href="" class="" data-toggle = "modal" data-target ="#myModal1">Sign Up</a>
+                </div>
+                </div>
+    <!-- Modal -->
+        <div id="myModal1" class="modal fade" role="dialog" style="color:black;">
+          <div class="modal-dialog">
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Register</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>  
+              </div>
+              <div class="modal-body">
+                <form method="post" action="function/register.php">
+                  <div class="form-group">
+                    <label for="email2">Email</label>
+                    <input type="email" class="form-control" name="email2" id="email2">
+                  </div>
+                  <div class="form-group">
+                    <label for="username2">Username</label>
+                    <input type="text" class="form-control" name="username2" id="username2">
+                  </div>
+                  <div class="form-group">
+                    <label for="password2">Password</label>
+                    <input type="password" class="form-control" name="password2" id="password2">
+                  </div>
+                  <div class="form-group">
+                    <label for="birth">Birth Date (Format Month-Day-Year)</label>
+                    <input type="date" class="form-control" name="birth" id="birth">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Latihan Soal</h4>
-              <p class="card-text">Latihan Soal Requirement Engineering</p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-primary">Mulai</a>
-            </div>
-          </div>
-        </div>
-
-       <!--  <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Biology</h4>
-              <p class="card-text">from the Greek word βίος, bios, "life" and the suffix -λογία, -logia, "study of." The Latin-language form of the term first appeared in 1736 when Swedish scientist Carl Linnaeus (Carl von Linné) used biologi in his Bibliotheca botanica.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div> -->
-
-       <!--  <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Chemistry</h4>
-              <p class="card-text"> turn is derived from the Arabic word al-kīmīā (الكیمیاء). In origin, the term is borrowed from the Greek χημία or χημεία. This may have Egyptian origins since al-kīmīā is derived from the Greek χημία, which is in turn derived from the word Kemet, which is the ancient name of Egypt in the Egyptian language. Alternately, al-kīmīā may derive from χημεία, meaning "cast together"</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-      <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Educatio 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
+</body>
 </html>
