@@ -11,30 +11,29 @@
   
 </head>
 <body>
-  <div class="row" style="margin-top: 100px;">
-                  <div class="col-xl-4"></div>
-                  <div class="col-xl-4" style="background-color: lavender;">
-                <form method="post" action="function/checklogin.php">
-                  <h1>Educatio</h1>
-                  <h3>Login Page</h3>
-                  <div class="form-group">
-                    <label for="text">Username</label>
-                    <input type="text" class="form-control" name="uname" id="uname">
-                  </div>
-                  <div class="form-group">
-                    <label for="nama_mekanik">Password</label>
-                    <input type="password" class="form-control" name="password" id="password">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Login</button>
-                </form>
-                <small>Didn't Have An Account?</small>
-                <a href="" class="" data-toggle = "modal" data-target ="#myModal1">Sign Up</a>
-                </div>
-                </div>
+  <div class="container">
+    <div class="row">
+      <div class="card">
+        <div class="card-header" style="text-align: center"><h2>Selamat Datang!</h2></div>
+        <div class="card-body">
+          <form method="post" action="function/checklogin.php">
+            <div class="form-group">
+              <input type="text" class="form-control" name="uname" id="uname" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+          <small>Didn't Have An Account?</small>
+          <a href="" class="" data-toggle = "modal" data-target ="#myModal1">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- Modal -->
         <div id="myModal1" class="modal fade" role="dialog" style="color:black;">
           <div class="modal-dialog">
-            
             <div class="modal-content">
               <div class="modal-header">
                 <h4 class="modal-title">Register</h4>
